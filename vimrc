@@ -19,6 +19,10 @@ set expandtab
 set hlsearch
 set laststatus=2
 set guifont=Liberation\ Mono\ for\ Powerline\ 10
+set foldmethod=indent
+set foldnestmax=2
+nnoremap <space> za
+vnoremap <space> zf
 
 let g:airline_powerline_fonts = 1
 
@@ -30,3 +34,4 @@ xnoremap p pgvy
 :map <F7> :set paste<CR>
 :map <F8> :set nopaste<CR>
 
+:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
