@@ -1,11 +1,10 @@
-
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme desert
 
 set mouse=a
 set number
@@ -18,9 +17,9 @@ set shiftwidth=2
 set expandtab
 set hlsearch
 set laststatus=2
-set guifont=Liberation\ Mono\ for\ Powerline\ 10
+set guifont=Monaco\ 10
 set foldmethod=indent
-set foldnestmax=2
+""set foldnestmax=2
 nnoremap <space> za
 vnoremap <space> zf
 
