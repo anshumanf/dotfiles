@@ -1,7 +1,5 @@
 alias ls="ls -F"
 alias ll="ls -altr"
-alias aptgetupdate="sudo apt-get update && sudo apt-get upgrade"
-alias pipupdate="sudo pip-review -v -a"
 export GREP_OPTIONS='--color=auto' 
 
 export TERM=xterm-256color
@@ -23,3 +21,7 @@ function sett() { tempstr=$(pwd); settitle `basename "$tempstr"`:`hostname`;}
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh" && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+. "/usr/local/opt/nvm/etc/bash_completion.d/nvm" && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
